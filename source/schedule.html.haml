@@ -14,7 +14,7 @@ title: Schedule
           = float_to_time hour
 
     %ul.days
-      - %w(Friday Saturday Sunday).each do |day|
+      - %w(Friday).each do |day|
         %li(class="#{day.downcase}")
           %strong= day
           %ul
