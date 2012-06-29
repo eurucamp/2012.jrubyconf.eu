@@ -1,7 +1,7 @@
 jrubyconf.eu Website README
 ===========================
 
-In this repository you'll find the website for eurucamp 2012.
+In this repository you'll find the website for JRubyConf EU.
 
 Install
 -------
@@ -34,7 +34,7 @@ Download and install [POW](http://pow.cx/):
 Then:
 
     cd ~/.pow
-    ln -s /path/to/eurucamp_website eurucamp
+    ln -s /path/to/jrubyconf.eu jrubyconf
 
 You will see the generated HTML & CSS by navigating to <http://eurucamp.dev/>.
 
@@ -51,10 +51,10 @@ Deployment
 
 ### Staging
 
-* <http://dev.eurucamp.org/>
+* <http://dev.jrubyconf.eu/>
 * `bundle exec rake staging deploy`
 
 ### Production
 
-* <http://2012.eurucamp.org/>
+* <http://jrubyconf.eu/>
 * `bundle exec rake production deploy`
