@@ -1,0 +1,44 @@
+body.index
+  @import "index/highlights"
+  @import "index/speakers"
+  @import "index/attendees"
+  @import "index/sponsors"
+  @import "index/twitter_feed"
+
+  #header
+    z-index: 1000
+
+  article
+    position: relative
+
+    & > header
+      padding: 4em 0 0 0
+      position: absolute
+      width: 100%
+      +clearfix
+
+      h2, h3
+        +brand-stripe(-2deg, $brand-2, false)
+
+      h2
+        +shadowed
+        z-index: 500
+
+      h3
+        font-size: 0.9em
+        margin-top: 0
+        width: 82%
+        margin-left: 20%
+        background: transparentize($brand-2, 0.10)
+        +transform(rotate(1deg))
+        z-index: 400
+
+    .block
+      +clearfix
+      background: transparentize(white, 0.1)
+
+
+  +respond-to(tablet-landscape)
+    article
+      header
+        padding: 3em 0 0 0

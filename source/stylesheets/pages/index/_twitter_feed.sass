@@ -1,0 +1,30 @@
+article
+  section.twitter-feed
+    +padded
+    +clearfix
+
+    h3
+      +brand-stripe(2deg, $brand-3)
+      +custom-sans(black)
+      position: absolute
+      bottom: 0.75em
+      right: -1em
+
+    ul
+      +unlisted
+      color: lighten($black, 55%)
+      font-size: 0.9em
+
+      li
+        margin-bottom: 1em
+
+        & > a
+          display: block
+          font-size: 0.8em
+
+    p
+      +more
+
+    +respond-to(tablet-lite)
+      width: 50%
+      float: right

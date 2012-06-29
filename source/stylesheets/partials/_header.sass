@@ -1,0 +1,94 @@
+body
+  #header
+    z-index: 10
+    padding: 1em 0
+    background: white
+    text-align: center
+    +padded
+
+    h1
+      margin: 0
+
+      a
+        display: block
+        position: relative
+
+        img
+          width: 100%
+
+    nav
+      display: none
+
+
+    +respond-to(mid-range)
+      h1
+        a
+          img
+            width: auto
+
+
+    +respond-to(tablet-lite)
+      +clearfix
+      padding: 1em 0 0 0
+
+      nav
+        display: block
+        border-top: 1px dotted $grey
+        margin: 1em auto 0 auto
+        padding: 0.5em 1em 0.75em
+        z-index: 1000
+
+        ul
+          +unlisted
+          line-height: 1.75em
+
+          li
+            display: inline-block
+            margin: 0 1em
+
+            a
+              color: $dark-grey
+              +text-inset
+              +caps
+              +custom-sans(bold)
+              +transition(color 0.5s)
+
+              &:hover
+                color: $brand-2
+                +transition(color 0.5s)
+
+              &.active
+                border-bottom: 3px solid $brand-2
+
+
+
+    +respond-to(tablet-portrait)
+      padding-top: 1.5em
+
+      h1
+        float: left
+
+      nav
+        float: right
+        margin: 0
+        padding: 0
+        border: none
+
+        ul
+          li
+            margin: 0 0 0 2em
+
+
+    +respond-to(tablet-landscape)
+      h1
+        float: none
+
+      nav
+        float: none
+        border-top: 1px dotted $grey
+        margin: 1em auto 0 auto
+        padding: 0.5em 1em 0.75em
+
+        ul
+          li
+            margin: 0 1em

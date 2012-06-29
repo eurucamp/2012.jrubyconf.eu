@@ -1,0 +1,93 @@
+// Bourbon provides us with this kind of helper, but we don't
+// have all formats available for Sonar Sans
+=sonar-font-face($font-name, $weight: normal, $style: normal)
+  @font-face
+    font-family: Sonar#{$font-name}
+    src: url('/fonts/sonar_sans/eot/Sonar-#{$font-name}TT.eot')
+    src: url('/fonts/sonar_sans/eot/Sonar-#{$font-name}.eot?#iefix') format('embedded-opentype'), url('/fonts/sonar_sans/woff/Sonar-#{$font-name}.woff') format('woff')
+    font-weight: $weight
+    font-style: $style
+
+=text-shadow($shadow)
+  +prefixer(text-shadow, $shadow)
+
+=text-inset($inverted: true)
+  @if $inverted == true
+    +text-shadow(0 1px 0 $white)
+  @else
+    +text-shadow(0 -1px 0 $black)
+
+=respond-to($media)
+  @if $media == low-end
+    @media screen and (min-width: 160px)
+      @content
+  @else if $media == mid-range
+    @media screen and (min-width: 240px)
+      @content
+  @else if $media == smartphone-portrait
+    @media screen and (min-width: 320px)
+      @content
+  @else if $media == smartphone-landscape
+    @media screen and (min-width: 480px)
+      @content
+  @else if $media == tablet-lite
+    @media screen and (min-width: 640px)
+      @content
+  @else if $media == tablet-portrait
+    @media screen and (min-width: 768px)
+      @content
+  @else if $media == tablet-landscape
+    @media screen and (min-width: 1024px)
+      @content
+  @else if $media == desktop
+    @media screen and (min-width: 1280px)
+      @content
+  @else if $media == large-screen
+    @media screen and (min-width: 1400px)
+      @content
+
+=padded
+  .wrapper
+    position: relative
+    margin: 0.75em
+  +respond-to(smartphone-portrait)
+    .wrapper
+      margin: 1em
+  +respond-to(tablet-portrait)
+    .wrapper
+      margin: 1.5em
+
+=shadowed
+  +box-shadow(3px 3px 1px 0 transparentize($black, 0.9))
+
+=unlisted
+  list-style: none
+  padding: 0
+  margin: 0
+
+=brand-stripe($rotation: -3deg, $color: $brand-2, $shadowed: true)
+  padding: 0.15em 1em 0.35em
+  margin: -2.75em -1em 0 -1em
+  font-weight: light
+  overflow: hidden
+  display: block
+  background: transparentize($color, 0.05)
+  color: $white
+  text-align: center
+  position: relative
+  z-index: 1000
+  +text-shadow(0 1px 0 darken($color, 10%))
+  -webkit-backface-visibility: hidden
+  +transform(rotate(#{$rotation}))
+  @if $shadowed
+    +shadowed
+
+=more
+  font-size: 0.8em
+  margin-top: 1.5em
+  padding-top: 0.8em
+  +custom-sans
+  border-top: 1px dotted $grey
+  color: $medium-grey
+  text-align: center
+

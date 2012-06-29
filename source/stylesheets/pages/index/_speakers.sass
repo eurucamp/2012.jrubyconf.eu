@@ -1,0 +1,91 @@
+article
+  section.speakers
+    +clearfix
+    +padded
+    border-bottom: 1px dotted $grey
+
+    h3
+      +brand-stripe(-1deg, $brand-3)
+      +custom-sans(black)
+      top: -0.5em
+      left: -1em
+      position: absolute
+      padding: 0.15em 1em 0.35em
+      margin: 0 -1em 0 -1em
+
+    ul
+      +unlisted
+      +clearfix
+      font-size: 0.75em
+      line-height: 1.2em
+
+      li
+        text-align: center
+        color: $white
+        position: relative
+        overflow: hidden
+
+        &:hover
+          cursor: pointer
+
+          span
+            top: 0
+            +transition(top 0.25s ease-in)
+            +custom-sans(normal, false)
+
+
+            strong
+              +custom-sans(bold, false)
+              text-transform: none
+
+        span
+          position: absolute
+          background: transparentize($black, 0.25)
+          top: 100%
+          width: 90%
+          padding: 35% 5% 0 5%
+          height: 65%
+          +transition(top 0.25s)
+
+        img
+          width: 100%
+          display: block
+
+        strong
+          display: block
+
+    p.cfp
+      +brand-stripe(0, $black)
+      +custom-sans(bold)
+      position: absolute
+      right: -1em
+      bottom: -0.5em
+
+      a
+        color: $brand-3
+
+
+    +respond-to(mid-range)
+      ul
+        li
+          width: 50%
+          float: left
+
+
+    +respond-to(smartphone-landscape)
+      ul
+        li
+          width: 25%
+
+
+    +respond-to(tablet-lite)
+      width: 50%
+      float: left
+
+
+    +respond-to(tablet-landscape)
+      float: none
+      width: 100%
+      ul
+        li
+          width: 12.5%

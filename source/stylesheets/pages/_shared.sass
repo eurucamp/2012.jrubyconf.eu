@@ -1,0 +1,27 @@
+body
+  +custom-serif
+
+  #jump-to-nav
+    color: $white
+    display: block
+    height: 2em
+    line-height: 2em
+    padding: 0 1em
+    text-align: right
+    border-bottom: 1px solid $grey
+    vertical-align: middle
+
+  +respond-to(tablet-lite)
+    #jump-to-nav
+      display: none
+
+  +respond-to(tablet-portrait)
+    font-size: 1.1em
+
+  +respond-to(tablet-landscape)
+    font-size: 1.2em
+    width: 1024px
+    margin: 0 auto
+
+    #container
+      padding: 2em 0
