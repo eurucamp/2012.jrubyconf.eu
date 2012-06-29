@@ -3,14 +3,14 @@
   company:      "Red Hat, Inc."
   company_url:  http://www.redhat.com/
   twitter:      tom_enebo
-  image:        tenebo.png
+  image:        tenebo.jpg
   url:          http://blog.enebo.com/
 -
   name:         Theo Hultberg
   company:      Burt
   company_url:  http://burtcorp.com/
   twitter:      ikonara
-  image:        thultberg.png
+  image:        thultberg.jpg
   url:          http://architecturalatrocities.com/
 -
   name:         Tim Lossen
