@@ -8,7 +8,7 @@ $ ->
 
   # Twitter
   if $('body').hasClass 'index'
-    new TwitterFeed 'eurucamp', $('.twitter-feed .tweets')
+    new TwitterFeed 'jrubyconfeu', $('.twitter-feed .tweets')
 
   # Map
   if $('body').hasClass 'venue'

@@ -5,11 +5,11 @@ body_class: index
 %article
   %header
     %h2
-      european ruby camp | summer edition
+      JRubyConf’s first Europe excursion
     %h3
-      17 - 19 August 2012, Berlin
+      17 August 2012, Berlin
 
-  = wrapped :section, :class => 'highlights' do
+  -# wrapped :section, :class => 'highlights' do
     %ul
       %li.venue
         %span
@@ -39,7 +39,7 @@ body_class: index
               = speaker.company
 
       %p.cfp
-        If you want to speak at eurucamp
+        If you want to speak at JRubyConf EU
         %a(href="https://eurucamp2012.busyconf.com/proposals/new" title="Call for proposals") you can still submit a proposal
 
 
@@ -56,7 +56,7 @@ body_class: index
               %img(src="https://api.twitter.com/1/users/profile_image/#{id}" alt="Avatar for #{id}")
       %p.more
         If you are attending
-        %a(href="http://lanyrd.com/2012/eurucamp/" title="eurucamp on lanyard.com") Let us know on Lanyrd
+        %a(href="http://lanyrd.com/2012/jrubyconfeu/" title="JRubyConf EU on lanyard.com") Let us know on Lanyrd
 
 /
   %section.sponsors
@@ -71,5 +71,3 @@ body_class: index
               = wrapped :li do
                 = link_to company.url do
                   %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
-
-
