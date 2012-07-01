@@ -1,45 +1,24 @@
 body.venue
   article
-    +clearfix
-    background: white
 
     header
       +padded
-      text-align: center
-      color: $dark-grey
-
-      h2
-        +brand-stripe(0, $brand-3, false)
-        padding: 0.5em
-        margin: 0
-        display: block
-        +custom-sans(black)
-
-      h3
-        z-index: 400
-        color: $medium-grey
-        background: none
-        +custom-sans(bold, false)
-        text-transform: none
-        font-variant: normal
-        +text-shadow(0 1px 0 white)
 
     section
-      h4
-        +brand-stripe(0, $black)
-        +custom-sans(bold)
-        margin: 1.5em 0 0 0
+      +clearfix
+      padding-bottom: 2em
 
-      h5
-        +custom-sans(bold)
-        font-size: 1.2em
-        margin-bottom: 0.25em
+      h4
+        +sticky
 
       ul
         +unlisted
 
         &.stand-alone
           margin-top: 1em
+
+      ul, p
+        font-size: 0.9em
 
       &.images
         ul
@@ -50,6 +29,18 @@ body.venue
             img
               width: 100%
               display: block
+
+      &.camping
+        h4
+          left: auto
+          +sticky($brand-3, true)
+
+      &.external,
+      &.internal,
+      &.city-intro,
+      &.hotel,
+      &.camping
+        border-top: 1px dotted $grey
 
       &.directions
         margin-bottom: 0
@@ -66,6 +57,7 @@ body.venue
             ul
               margin: 0.5em 0 0 0
               background: transparent url(/images/layout/venue/line.png) repeat-y 4px top
+
               li
                 padding-left: 20px
                 margin-bottom: 0.25em
@@ -78,7 +70,20 @@ body.venue
               color: $brand-3
               margin: 0 0 0.25em 0
 
-      &.city,
+      &.city-intro,
+      &.apartment,
+      &.couch,
+      &.hostels
+        padding-bottom: 0
+
+        .wrapper,
+        .wrapper h5
+          margin-top: 0.5em
+
+      &.apartment
+        padding-bottom: 2em
+
+      &.city-intro,
       &.apartment,
       &.couch,
       &.hostels
@@ -90,6 +95,7 @@ body.venue
     address
       border-top: 1px solid $grey
       font-style: normal
+      padding: 0
 
       h4
         margin: 0
@@ -99,23 +105,15 @@ body.venue
       +clearfix
       color: $dark-grey
 
-
     section.map
       z-index: 0
       width: 100%
       height: 20em
+      padding: 0
 
 
   +respond-to(smartphone-portrait)
     article
-      header
-        h2
-          padding: 0.15em 2em 0.35em 2em
-          width: 100%
-          margin: -1em -4em 0 -2em
-          +transform(rotate(-2deg))
-          +shadowed
-
       section.images
         ul
           li
@@ -146,6 +144,8 @@ body.venue
         &.apartment
           float: left
           width: 33.33333%
+
+
 
         &.images
           ul
@@ -187,4 +187,3 @@ body.venue
 
       section.map
         z-index: 1
-

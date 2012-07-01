@@ -1,4 +1,29 @@
-// Bourbon provides us with this kind of helper, but we don't
+=caps
+  text-transform: lowercase
+  font-variant: small-caps
+
+=no-caps
+  text-transform: none
+  font-variant: normal
+
+=custom-sans($weight: normal, $caps: true)
+  font-family: "proxima-nova", Helvetica, Arial, sans-serif
+  @if $weight == bold
+    font-weight: 700
+  @else if $weight == black
+    font-weight: 900
+  @else
+    font-weight: 400 // regular
+  @if $caps == true
+    +caps
+
+=custom-serif($weight: normal)
+  font-family: "ff-tisa-web-pro", Georgia, serif
+  @if $weight == bold
+    font-weight: 700
+  @else
+    font-weight: 300
+
 =text-shadow($shadow)
   +prefixer(text-shadow, $shadow)
 
@@ -63,9 +88,8 @@
   margin: 0
 
 =brand-stripe($rotation: -3deg, $color: $brand-2, $shadowed: true)
-  padding: 0.15em 1em 0.35em
-  margin:  0 -1em
-  overflow: hidden
+  padding: 0.15em 0 0.35em
+  margin: 0
   display: block
   background: transparentize($color, 0.05)
   color: $white
@@ -73,12 +97,38 @@
   position: relative
   z-index: 1000
   +text-shadow(0 1px 0 darken($color, 10%))
-  -webkit-backface-visibility: hidden
   +transform(rotate(#{$rotation}))
   -webkit-background-clip: padding-box
+  -webkit-backface-visibility: hidden
   background-clip: padding-box
   @if $shadowed
     +shadowed
+
+=sticky($color: $brand-3, $right: false)
+  padding: 0.15em 1em 0.35em
+  margin: 0
+  display: block
+  background: transparentize($color, 0.05)
+  color: $white
+  text-align: center
+  position: relative
+  z-index: 1000
+  +text-shadow(0 1px 0 darken($color, 10%))
+
+  +respond-to(smartphone-portrait)
+    position: absolute
+    top: -2em
+    +shadowed
+    @if $right == true
+      right: -0.5em
+    @else
+      left: -0.5em
+
+  +respond-to(tablet-oversize)
+    @if $right == true
+      right: -1.75em
+    @else
+      left: -1.75em
 
 =more
   font-size: 0.8em
@@ -88,4 +138,16 @@
   border-top: 1px dotted $grey
   color: $medium-grey
   text-align: center
+
+
+
+// don = Day Or Night
+=at-night
+  html.night &
+    @content
+
+=don($property, $a, $b)
+  #{$property}: $a
+  +at-night
+    #{$property}: $b
 
