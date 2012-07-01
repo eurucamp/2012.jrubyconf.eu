@@ -7,18 +7,12 @@ BG_PATH = '/images/layout/background.jpg'
 
 $ ->
 
-  # Set theme by cookie
-  setTheme($.cookie 'day')
-
   # Responsive images
   $('img.resp').responsiveImages()
 
   # Twitter
   if $('body').hasClass 'index'
     new TwitterFeed 'jrubyconfeu', $('.twitter-feed .tweets')
-
-  # Theme toggle
-  $('a.theme-toggle').on 'click', -> setTheme()
 
   # Map
   if $('body').hasClass 'venue'
@@ -68,14 +62,3 @@ $ ->
         false
 
 
-window.setTheme = (theme) ->
-  current = $.cookie 'theme'
-  if !theme
-    theme = if current == 'day' then 'night' else 'day'
-  if theme in ['day', true]
-    $('html').removeClass('night')
-    $.backstretch BG_PATH, BG_OPTIONS
-  else
-    $('html').addClass('night')
-    $.backstretch 'destroy'
-  $.cookie 'theme', theme
