@@ -56,13 +56,13 @@ body.venue
 
             ul
               margin: 0.5em 0 0 0
-              background: transparent url(/images/layout/venue/line.png) repeat-y 4px top
+              +image('venue/line.png', repeat-y, 4px top, true)
 
               li
                 padding-left: 20px
                 margin-bottom: 0.25em
                 color: $medium-grey
-                background: transparent url(/images/layout/venue/circle.png) no-repeat left center
+                +image('venue/circle.png', false, left center, true)
 
             strong
               display: block
@@ -146,8 +146,6 @@ body.venue
         &.apartment
           float: left
           width: 33.33333%
-
-
 
         &.images
           ul
