@@ -31,7 +31,7 @@ namespace :utils do
 
   desc "Update sitemap"
   task :update_sitemap do
-    SitemapGenerator::Sitemap.default_host = 'http://2012.eurucamp.org'
+    SitemapGenerator::Sitemap.default_host = 'http://jrubyconf.eu'
     SitemapGenerator::Sitemap.public_path = "source"
     SitemapGenerator::Sitemap.create do
       add '/',           :changefreq => 'hourly'
@@ -41,11 +41,11 @@ namespace :utils do
       add '/venue',      :changefreq => 'daily'
 
       add '/blog',       :changefreq => 'hourly', :priority => 0.9
-      #Dir["source/blog/*"].each do |blog_entry_file|
-      #  post_link = blog_entry_file.gsub(/^source\/blog\/|\.html.markdown$/,"")
-      #  post_link = post_link[0..10].gsub("-","/") + post_link[11,post_link.size]
-      #  add post_link,   :changefreq => 'hourly', :priority => 0.9
-      #end
+      Dir["source/blog/*"].each do |blog_entry_file|
+        post_link = blog_entry_file.gsub(/^source\/blog\/|\.html.markdown$/,"")
+        post_link = post_link[0..10].gsub("-","/") + post_link[11,post_link.size]
+        add post_link,   :changefreq => 'hourly', :priority => 0.9
+      end
     end
     SitemapGenerator::Sitemap.ping_search_engines
   end
