@@ -1,10 +1,3 @@
-BG_OPTIONS =
-  centeredX: true
-  centeredY: true
-  speed    : 500
-
-BG_PATH = '/images/layout/background.jpg'
-
 $ ->
 
   # Responsive images
@@ -60,9 +53,3 @@ $ ->
       else if !/^http/.test(href)
         window.location = "#{href}.html?dev"
         false
-
-toggleBGImage = ->
-  if $(@).width() > 1024
-    $.backstretch BG_PATH, BG_OPTIONS
-  else
-    $.backstretch 'destroy'
