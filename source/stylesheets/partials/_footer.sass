@@ -1,10 +1,12 @@
 body
   #footer
     clear: both
-    +padded
     +clearfix
     text-align: center
     background: $black
+
+    html.no-js &
+      background: $black
 
     .primary-navigation
       margin: 0 0 2em 0
@@ -18,12 +20,12 @@ body
             text-align: left
             display: block
             font-weight: bold
+            color: $white
             border-bottom: 1px dotted $grey
             +transition(color 0.5s, background-color 0.5s)
 
             &:hover
               background-color: $brand-2
-              color: $white
               +transition(color 0.5s, background-color 0.5s)
 
     .secondary-navigation
@@ -88,7 +90,7 @@ body
         float: right
 
       ul.links
-        margin: 0
+        margin: 0 1em
         float: left
 
 
@@ -119,6 +121,10 @@ body
           img
             margin: 0
             +transition(margin 0.25s)
+
+
+    +respond-to(tablet-landscape)
+      background: none
 
 
     +respond-to(desktop)

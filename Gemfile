@@ -7,8 +7,10 @@ gem 'sass',              :git => 'https://github.com/nex3/sass.git',
 gem 'middleman',         '~>3.0.0.rc1'
 gem 'middleman-blog',    '~>3.0.0.rc1'
 gem 'builder'
+gem 'sitemap_generator'
 gem 'coffee-script'
 gem 'bourbon'
+gem 'nokogiri'
 
 gem 'html5-boilerplate', :require => 'html5-boilerplate',
                          :git     => 'git://github.com/edenspiekermann/compass-html5-boilerplate.git',

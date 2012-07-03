@@ -8,16 +8,8 @@ body.schedule
       text-align: center
       color: $dark-grey
 
-      h2
-        +brand-stripe(0, $brand-3, false)
-        padding: 0.5em
-        margin: 0
-        display: block
-        +custom-sans(black)
-
     .schedules
       position: relative
-      padding-top: 1em
 
       ul
         &.legend
@@ -67,21 +59,10 @@ body.schedule
                       color: $white
 
 
-  +respond-to(smartphone-portrait)
-    article
-      header
-        h2
-          padding: 0.15em 2em 0.35em 2em
-          width: 100%
-          margin: -1em -4em 0 -2em
-          +transform(rotate(-2deg))
-          +shadowed
-
-
   +respond-to(tablet-portrait)
     article
       header
-        margin: 0 0 4em 0
+        margin: 0 0 5em 0
 
       .schedules
         ul
@@ -121,7 +102,7 @@ body.schedule
               & > strong
                 color: $medium-grey
                 border: none
-                margin: -1em 0 0 0
+                margin: -1.5em 0 0 0
                 border: none
 
               ul

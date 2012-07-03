@@ -5,9 +5,7 @@ article
     border-bottom: 1px dotted $grey
 
     h3
-      +brand-stripe(0, $brand-3, false)
-      +custom-sans(black)
-      margin: 0
+      +sticky
 
     ul
       +unlisted
@@ -20,14 +18,14 @@ article
         color: $white
         position: relative
         overflow: hidden
+        +custom-sans(normal, false)
 
         &:hover
           cursor: pointer
 
           span
             top: 0
-            +transition(top 0.25s ease-in)
-            +custom-sans(normal, false)
+            +transition(top 0.2s cubic-bezier(1.000, 0.010, 0.800, 0.995))
 
             strong
               +custom-sans(bold, false)
@@ -40,7 +38,7 @@ article
           width: 90%
           padding: 35% 5% 0 5%
           height: 65%
-          +transition(top 0.25s)
+          +transition(top 0.25s cubic-bezier(1.000, 0.010, 0.800, 0.995))
 
         img
           width: 100%
@@ -52,6 +50,8 @@ article
     p.cfp
       +brand-stripe(0, $black)
       +custom-sans(bold)
+      padding-left: 1em
+      padding-right: 1em
 
       a
         color: $brand-3
@@ -67,17 +67,6 @@ article
           float: left
 
 
-    +respond-to(smartphone-portrait)
-      h3
-        top: 0.5em
-        left: 0
-        position: absolute
-        padding: 0.15em 1em 0.35em
-        margin: 0 -1em 0 -1em
-        +shadowed
-        +transform(rotation(-1deg))
-
-
     +respond-to(smartphone-landscape)
       ul
         li
@@ -85,27 +74,32 @@ article
 
       p.cfp
         position: absolute
-        right: 0.5em
         bottom: -0.5em
+        right: 0
 
 
     +respond-to(tablet-lite)
       width: 50%
       float: left
+      border: none
+      margin-bottom: 2em
 
 
     +respond-to(tablet-landscape)
+      border-bottom: 1px dotted $grey
       float: none
       width: 100%
+      margin-bottom: 0
+
       ul
         li
           width: 12.5%
 
+      p.cfp
+        right: -0.5em
+
 
     +respond-to(tablet-oversize)
-      h3
-        left: -1em
-
       p.cfp
-        right: -1em
+        right: -1.75em
 

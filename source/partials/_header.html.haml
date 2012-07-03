@@ -1,6 +1,10 @@
-%h1
-  = link_to '/' do
-    - sizes = request.path =~ /index/ ? [360, 1280] : [360]
-    = image '/images/layout/header/logo.png', sizes, :alt => "JRubyConf EU"
+= link_to '#footer', :id => 'jump-to-nav' do
+  %img(src="/images/layout/jump_to_main_nav.png" width="20" height="13" alt="Jump to main navigation")
 
-= partial 'partials/primary_navigation'
+= wrapped :header, :id => 'header' do
+  %h1
+    %a(href='/')
+      - sizes = request.path =~ /index/ ? [360, 1280] : [360]
+      = image '/images/layout/header/logo.png', sizes, :alt => "JRubyConf EU"
+
+  = partial 'partials/primary_navigation'

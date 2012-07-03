@@ -1,8 +1,10 @@
 section.highlights
   +padded
   +clearfix
-  background: darken($blue, 5%)
+  +don(background, white, $black)
   border-bottom: 1px dotted $grey
+  +at-night
+    border: none
   z-index: 0
   position: relative
 
@@ -20,10 +22,12 @@ section.highlights
 
       span
         display: block
-        color: white
+        +don(color, $medium-grey, $white)
         text-align: center
         +custom-sans(bold, false)
-        +text-shadow(0 1px 0 black)
+        +text-shadow(0 1px 0 white)
+        +at-night
+          +no-text-shadow
 
         br
           display: none
@@ -31,15 +35,15 @@ section.highlights
 
   +respond-to(smartphone-portrait)
     ul
-      padding: 7em 0 2em 0
+      padding: 1em 0
 
 
   +respond-to(smartphone-landscape)
     ul
-      padding: 5em 0 2em 0
+      padding: 4em 0 1em 0
 
 
-  +respond-to(tablet-portrait)
+  +respond-to(tablet-lite)
     ul
       padding: 4em 0 1em 0
 
@@ -50,6 +54,8 @@ section.highlights
         span
           padding: 1em 0
           border-right: 1px dotted $grey
+          +at-night
+            border-color: $dark-grey
 
           br
             display: inherit
