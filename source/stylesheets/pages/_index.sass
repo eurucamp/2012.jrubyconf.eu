@@ -62,6 +62,8 @@ body.index
     article
       header
         margin-top: 0
+        padding-bottom: 3em
+        border-bottom: 1px dotted $grey
 
         h2, h3
           +transition(all 0.5s)
@@ -84,6 +86,8 @@ body.index
   +respond-to(tablet-lite)
     article
       header
+        padding-bottom: 4em
+
         h2
           span
             display: inline
@@ -109,7 +113,6 @@ body.index
           margin-left: 20%
           +transition(all 0.5s)
           +transform(rotate(0.5deg))
-
 
 
   +respond-to(tablet-oversize)
