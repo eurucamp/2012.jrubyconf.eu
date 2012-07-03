@@ -7,23 +7,12 @@ BG_PATH = '/images/layout/background.jpg'
 
 $ ->
 
-  # if no theme cookie is set, select by time of day
-  if !$.cookie('theme') && ((time = (new Date).getHours()) > 18 || time < 6)
-     setTheme 'night'
-  else
-    setTheme($.cookie 'theme')
-
   # Responsive images
   $('img.resp').responsiveImages()
 
   # Twitter
   if $('body').hasClass 'index'
     new TwitterFeed 'jrubyconfeu', $('.twitter-feed .tweets')
-
-  # Theme toggle
-  $('a.theme-toggle').on 'click', ->
-    setTheme()
-    false
 
   # Map
   if $('body').hasClass 'venue'
@@ -77,18 +66,3 @@ toggleBGImage = ->
     $.backstretch BG_PATH, BG_OPTIONS
   else
     $.backstretch 'destroy'
-
-window.setTheme = (theme) ->
-  current = $.cookie 'theme'
-  if !theme
-    theme = if current == 'day' then 'night' else 'day'
-  if theme in ['day', true]
-    $('html').removeClass('night')
-    $(window)
-      .on('resize.bgimage', $.debounce(toggleBGImage, 500))
-      .trigger('resize')
-  else
-    $('html').addClass('night')
-    $(window).off 'resize.bgimage'
-    $.backstretch 'destroy'
-  $.cookie 'theme', theme
