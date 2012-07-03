@@ -53,7 +53,7 @@ namespace :utils do
   # scrapes eurucamp page on lanyrd.com and returns
   # array of Twitter names
   def lanyrd_attendees
-    url = 'http://lanyrd.com/2012/eurucamp/'
+    url = 'http://lanyrd.com/2012/jrubyconfeu/'
     sel = '.attendees-placeholder ul li a'
     doc = Nokogiri::HTML(open(url))
     doc.css(sel).map { |a| a[:title].match('@(.*)')[1] }
