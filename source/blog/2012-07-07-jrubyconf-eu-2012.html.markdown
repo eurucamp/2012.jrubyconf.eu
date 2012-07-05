@@ -1,0 +1,28 @@
+---
+title: JRubyConf EU 2012!
+date: 2012-07-07
+tags: website
+author: Tom Enebo
+body_class: article
+---
+
+There have been 4 JRubyConfs in the US so far, but none in Europe.
+Until now.  We are happy to announce the first JRubyConf EU!
+
+JRubyConf EU will be happening off the shore of the beatiful Lake
+Müggelsee in Berlin, Germany on August 17.  As a first year event,
+JRubyConf EU is a special side-car event to the larger eurucamp
+conference.  So come on August 17, for a full day of JRuby talks
+(single-track) and then stay for August 18-19 for eurucamp itself.
+Three fun-filled days of Ruby.
+
+READMORE
+
+JRubyConf EU is still looking for presentations and the [Call for Proposals][cfp]
+will be open until midnight CEST July 13.  Share your experiences using
+JRuby with a group of people interested in JRuby.
+_Can you think of anything more enjoyable than that?_
+
+
+[eurucamp]:http://2012.eurucamp.org/
+[cfp]:https://eurucamp2012.busyconf.com/proposals/new
