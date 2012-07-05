@@ -10,7 +10,7 @@ xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
 
   blog.articles[0..5].each do |article|
     xml.entry do
-      full_url = "http://2012.eurucamp.org" + article.url_without_extension
+      full_url = "http://jrubyconf.eu" + article.url_without_extension
 
       xml.title article.title
       xml.link "rel" => "alternate", "href" => full_url
