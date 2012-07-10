@@ -9,6 +9,16 @@ body_class: index
     %h3
       17 August 2012, Berlin
 
+  = wrapped :section, :class => 'register' do
+    = link_to 'http://eurucamp2012.eventbrite.com', :title => 'Get your ticket', :class => 'primary' do
+      %span
+        Register now
+    %p
+      %small
+        Ticket prices are
+        = link_to 'starting from &euro;50', '/2012/07/05/ticket-sales-begin-monday', :title => 'More information on our blog'
+        \.
+
   .block
     = wrapped :section, :class => 'speakers' do
       %h3 Our speakers
