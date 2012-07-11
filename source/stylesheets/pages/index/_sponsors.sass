@@ -1,10 +1,14 @@
 article
   section.sponsors
-    padding: 2em 0
-    background: $brand-3
+    +clearfix
+    border-top: 1px dotted $grey
 
     header
       h3
+        width: auto
+        margin: 0
+        +sticky
+        +custom-sans(black)
 
     div
       +padded
