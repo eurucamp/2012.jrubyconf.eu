@@ -4,6 +4,7 @@ date: 2012-07-07
 tags: website
 author: Tom Enebo
 body_class: article
+published: true
 ---
 
 There have been 4 JRubyConfs in the US so far, but none in Europe.
