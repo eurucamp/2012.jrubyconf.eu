@@ -57,16 +57,5 @@ body_class: index
         If you are attending
         %a(href="http://lanyrd.com/2012/jrubyconfeu" title="JRubyConf EU on lanyard.com") Let us know on Lanyrd
 
--#
-  %section.sponsors
-    = wrapped :header do
-      %h3 Our sponsors
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
 
-      - data.index.sponsors.each do |group|
-        = wrapped :div, :class => group.type.downcase do
-          %h4= group.type
-          %ul
-            - group.companies.each do |company|
-              = wrapped :li do
-                = link_to company.url do
-                  %img(src="/images/content/sponsors/#{company.image}" alt="Sponsor: #{company.name}")
