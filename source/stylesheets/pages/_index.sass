@@ -157,6 +157,13 @@ body.index
         .wrapper
           width: 33.33333%
 
+  +respond-to(tablet-landscape)
+    article
+      & > header
+        background: white
+        +at-night
+          background: $black
+
   +respond-to(tablet-oversize)
     #container
       overflow: visible
