@@ -6,6 +6,11 @@ body
     text-align: center
     +padded
 
+    p
+      margin-bottom: 0
+      +custom-sans
+      color: $medium-grey
+
     h1
       margin: 0
 
@@ -67,6 +72,9 @@ body
     +respond-to(tablet-portrait)
       padding-top: 1.5em
 
+      p
+        width: 280px
+
       h1
         float: left
 
@@ -85,6 +93,9 @@ body
 
     +respond-to(tablet-landscape)
       +don(background, white, $black)
+
+      p
+        width: auto
 
       h1
         float: none
