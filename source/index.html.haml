@@ -65,3 +65,7 @@ body_class: index
 
     = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
 
+    = wrapped :header do
+      %h3 Our partners
+    = partial 'partials/partners', :locals => { :partners => data.partners }
+
