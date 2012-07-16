@@ -54,7 +54,7 @@ namespace :utils do
   # scrapes eurucamp page on lanyrd.com and returns
   # array of Twitter names
   def lanyrd_attendees
-    base_url             = 'http://lanyrd.com/2012/jrubyconfeu/'
+    base_url             = 'http://lanyrd.com/2012/jrubyconfeu/attendees/'
     profile_selector     = '.primary .mini-profile .meta a'
     first_page           = Nokogiri::HTML(open(base_url))
     attendees            = first_page.css(profile_selector).map {|a| a.content.gsub('@', '') }
