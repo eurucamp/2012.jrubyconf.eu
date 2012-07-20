@@ -19,3 +19,45 @@
   twitter:      tlossen
   image:        tlossen.jpg
   url:          http://tim.lossen.de/
+-
+  name:         Joe Kutner
+  company:      Independent Consultant
+  company_url:
+  twitter:      codefinger
+  image:        jkutner.jpg
+  url:          http://joekutner.appspot.com/
+-
+  name:         Toby Crawley
+  company:      "Red Hat, Inc."
+  company_url:  http://www.redhat.com/
+  twitter:      tcrawley
+  image:        tcrawley.jpg
+  url:          http://blog.tobiascrawley.net/
+-
+  name:         Benoit Daloze
+  company:      Université catholique de Louvain
+  company_url:  http://www.uclouvain.be/
+  twitter:      eregontp
+  image:        bdaloze.jpg
+  url:
+-
+  name:         David Tollmyr
+  company:      Burt
+  company_url:  http://burtcorp.com/
+  twitter:      effata
+  image:        dtollmyr.jpg
+  url:          http://www.taketh.se/
+-
+  name:         Mario Camou
+  company:      abstrac·cc
+  company_url:  http://www.abstra.cc/
+  twitter:      thedoc
+  image:        mcamou.jpg
+  url:          http://www.abstra.cc/
+-
+  name:         Uwe Kubosch
+  company:      Datek Wireless AS
+  company_url:  http://www.datek.no/
+  twitter:
+  image:        ukubosch.jpg
+  url:          http://kubosch.no/
