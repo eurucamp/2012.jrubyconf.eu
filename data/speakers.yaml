@@ -111,7 +111,11 @@
   image:        bdaloze.jpg
   url:
   bio:          |
-    _to be added_
+    Benoit is an open-source passionate and a benchmark freak. He recently
+    became a MRI committer and enjoys contributing to many projects including
+    JRuby, Rubinius and Homebrew. He has been working this summer with the
+    Google Summer of Code program and had the chance to have @enebo as a
+    mentor.
   talk_title:   Benchmarking the right way with Perfer
   talk_type:    30min
   talk_summary: |
