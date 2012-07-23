@@ -49,12 +49,12 @@
   image:        tlossen.jpg
   url:          http://tim.lossen.de/
   bio:          |
-    Tim really enjoys talking about himself in the third person. Not. 
+    Tim really enjoys talking about himself in the third person. Not.
 
     He lives in Berlin with his girlfriend and two charming little daughters.
-    Tim is deeply in love with Ruby and co-organized Euruko 2011. 
-    Tim works as backend engineer at social gaming startup [Wooga](http://wooga.com). 
-    At night he likes to go down to the basement and hack on secret hardware 
+    Tim is deeply in love with Ruby and co-organized Euruko 2011.
+    Tim works as backend engineer at social gaming startup [Wooga](http://wooga.com).
+    At night he likes to go down to the basement and hack on secret hardware
     projects like Superglobe or [Evercube](http://evercu.be).
   talk_title:   Building a High-Traffic Game Server in JRuby
   talk_type:    30min
@@ -98,11 +98,34 @@
   image:        tcrawley.jpg
   url:          http://blog.tobiascrawley.net/
   bio:          |
-    _to be added_
-  talk_title:   To be announced
+    As a core member of the [TorqueBox](http://torquebox.org/) and
+    [Immutant](http://immutant.org) teams
+    at Red Hat, Toby helps drive the integration of Java and other JVM
+    languages. Toby joined Red Hat in 2010, initially working on cloud
+    technologies using Ruby before moving to work on TorqueBox and
+    Immutant full-time.
+
+    Prior to joining Red Hat, Toby spent too many years as a freelance
+    consultant developing Ruby and Java applications.
+  talk_title:   Simplify Your Infrastructure With TorqueBox
   talk_type:    30min
   talk_summary: |
-    _to be announced_
+    [TorqueBox](http://torquebox.org/) is an open source project that
+    combines [JRuby](http://jruby.org/) with the [JBoss Application
+    Server](http://www.jboss.org/as7) to form a fast, scalable application
+    server for Rack/Rails applications. It exposes features traditionally
+    found in Java application servers to Ruby, such as:
+
+    * asynchronous processing
+    * job scheduling
+    * daemons
+    * caching
+    * clustering
+    * websockets
+
+    After a quick overview, we'll modify an existing application via
+    "live" coding to use some of the above features as a demonstration of
+    the simplicity and power that TorqueBox provides.
 -
   name:         Benoit Daloze
   company:      Université catholique de Louvain
@@ -189,7 +212,7 @@
     While the JRuby team has added some features to easily call Scala code
     from JRuby in 1.6.0 and 1.6.6, calling JRuby from Scala still relies on
     the bare JRuby embedding APIs.
-    
+
     In this session we will cover the new features for calling Scala from
     JRuby, as well as introducing an interoperability library called
     (Scuby)[http://github.com/abstracc/scuby] that we built for easing the
