@@ -6,13 +6,12 @@
   image:        tenebo.jpg
   url:          http://blog.enebo.com/
   bio:          |
-    Thomas Enebo is the co-lead of the JRuby project and an employee of
-    Red Hat.  He has been a practitioner of Java since the heady days of
-    the HotJava browser, and he has been happily using Ruby since 2001.
-    Thomas has spoken at numerous Java and Ruby conferences, co-authored
-    "Using JRuby", and was awarded the "Rock Star" award at JavaOne.  When
-    Thomas is not working he enjoys biking, anime, and drinking a decent
-    IPA.
+    Tom is the co-lead of the JRuby project and an employee of Red Hat. He has
+    been a practitioner of Java since the heady days of the HotJava browser,
+    and he has been happily using Ruby since 2001. Thomas has spoken at
+    numerous Java and Ruby conferences, co-authored "Using JRuby", and was
+    awarded the "Rock Star" award at JavaOne. When Thomas is not working he
+    enjoys biking, anime, and drinking a decent IPA.
   talk_title: JRubyConf EU Keynote
   talk_type: 30min
   talk_summary: |
@@ -25,10 +24,10 @@
   image:        thultberg.jpg
   url:          http://architecturalatrocities.com/
   bio:          |
-    Theo Hultberg is Chief Architect at Burt, a Göteborg based big data
+    Theo is Chief Architect at Burt, a Göteborg based big data
     startup that wants to revolutionize the advertising industry by showing
     that there's more to ad analytics than clicks. Theo has built distributed
-    analytics systems that handle tens of millions of messages per day, in
+    analytics systems that handle tens of millions of messages per day – in
     Ruby.
   talk_title:   Concurrency and distributed systems with JRuby
   talk_type:    30min
@@ -45,7 +44,7 @@
     Running on the JVM is like standing on the shoulders of giants. Why not
     use Akka, an actor framework written in Scala, or Storm, a distributed
     real time computation system written in Clojure? I’ll explain how, and
-    show you many more examples on how to use the full power of the JVM from
+    show you many more examples of how to use the full power of the JVM from
     the comfort of Ruby.
 -
   name:         Tim Lossen
@@ -59,7 +58,7 @@
 
     He lives in Berlin with his girlfriend and two charming little daughters.
     Tim is deeply in love with Ruby and co-organized Euruko 2011.
-    Tim works as backend engineer at social gaming startup [Wooga](http://wooga.com).
+    Tim works as a backend engineer at social gaming startup [Wooga](http://wooga.com).
     At night he likes to go down to the basement and hack on secret hardware
     projects like Superglobe or [Evercube](http://evercu.be).
   talk_title:   Building a High-Traffic Game Server in JRuby
@@ -74,12 +73,12 @@
   image:        jkutner.jpg
   url:          http://joekutner.appspot.com/
   bio:          |
-    Joe Kutner is the author of "Deploying with JRuby" from the Pragmatic
-    Bookshelf. He has been building JRuby applications since 2006 for clients
-    including IBM and NASA. Today, Joe is a professional software consultant
-    and founder of LogicHaus, where he builds Ruby and Rails applications for
-    customers of all sizes. He also contributes to several JRuby projects
-    including TorqueBox and Trinidad.
+    Joe is the author of [Deploying with JRuby](http://pragprog.com/book/jkdepj/deploying-with-jruby)
+    from the Pragmatic Bookshelf. He has been building JRuby applications
+    since 2006 for clients including IBM and NASA. Today, Joe is a
+    professional software consultant and founder of LogicHaus, where he builds
+    Ruby and Rails applications for customers of all sizes. He also
+    contributes to several JRuby projects including TorqueBox and Trinidad.
 
   talk_title:   Deploy, Scale and Sleep Better with JRuby
   talk_type:    30min
@@ -140,8 +139,8 @@
   image:        bdaloze.jpg
   url:
   bio:          |
-    Benoit is an open-source passionate and a benchmark freak. He recently
-    became a MRI committer and enjoys contributing to many projects including
+    Benoit is an open-source evangelist and a benchmark freak. He recently
+    became an MRI committer and enjoys contributing to many projects including
     JRuby, Rubinius and Homebrew. He has been working this summer with the
     Google Summer of Code program and had the chance to have @enebo as a
     mentor.
@@ -150,7 +149,7 @@
   talk_summary: |
     Ever wondered what it would take to have stable and reliable measurements
     for your performance? Or wished to know the evolution of it across
-    releases and rubies? Or simply to know how fast or slow is some code?
+    releases and rubies? Or simply to know how fast or slow some code is?
     Perfer is a benchmarking tool, intending to solve these, and to provide an
     easy way to store, transform and compare the results and to make a graph
     of it. This is the result of a GSoC project of this year, so it's fresh
@@ -168,38 +167,37 @@
   image:        dtollmyr.jpg
   url:          http://www.taketh.se/
   bio:          |
-    Seven years ago i got asked to join a friends startup. Very simple stuff,
-    one web server, editing php scripts live. That was the start of a
-    fantastic journey that has now taken me to ad analytics startup Burt,
-    where we show that there's more to metrics the clicks. On a normal day, we
-    process tens of thousands of requests per second, in real time, in JRuby.
-    On my spare time, i sing in two metal bands, play competitive Starcraft II
-    and collect single malts.
+    Seven years ago David was asked to join a friend's startup. Very simple
+    stuff, one web server, editing php scripts live. That was the start of a
+    fantastic journey that has now taken him to ad analytics startup Burt,
+    where they show that there's more to metrics than clicks. On a normal day,
+    the Burt team process tens of thousands of requests per second, in real
+    time, in JRuby. In my spare time, David sings in two metal bands, play
+    competitive Starcraft II and collect single malts.
   talk_title:   Gotcha! JRuby performance issues that will come back to bite you
   talk_type:    30min
   talk_summary: |
-    With JRuby you can take the simplicity of Ruby and scale up to to very
+    With JRuby you can take the simplicity of Ruby and scale up to very
     complex systems with little effort. But there are monsters hiding in the
-    shadows, waiting to strike. That class you just build might work fine in
-    your tests, but what happens when you run it ten thousand times per
-    second? At Burt we've learned a lot of these lessons the hard way. Now you
-    don't have to! Let me show you some of the most common issues you're gonna
-    run in to, how you can work around them and the tools that will help you
-    on the way.
+    shadows, waiting to strike. That class you just wrote might work perform
+    fine in your tests, but what happens when you run it ten thousand times
+    per second? At Burt we've learned a lot of these lessons the hard way. Now
+    you don't have to! Let me show you some of the most common issues you're
+    going to run in to, how you can work around them and the tools that will
+    help you on the way.
 -
   name:         Mario Camou
   company:      abstrac·cc
   company_url:  http://www.abstra.cc/
   twitter:      thedoc
   image:        mcamou.jpg
-  url:          http://www.abstra.cc/
+  url:          http://www.linkedin.com/in/mcamou
   bio:          |
-    Mario Camou has been involved with Java since the Beta version, and with
-    JRuby and Scala since 2008. In previous incarnations he was Java
-    Evangelist for Sun Mexico and Java Instructor for Sun EMEA. He is
-    currently Master Architect and Co-founder of Abstra.cc, where he is
-    involved in several projects using JRuby, Scala and combinations thereof.
-    His LinkedIn profile is at [http://www.linkedin.com/in/mcamou].
+    Mario has been involved with Java since the Beta version, and with JRuby
+    and Scala since 2008. In previous incarnations he was Java Evangelist for
+    Sun Mexico and Java Instructor for Sun EMEA. He is currently Master
+    Architect and Co-founder of Abstra.cc, where he is involved in several
+    projects using JRuby, Scala and combinations thereof.
   talk_title:   Static or dynamic typing? Why not both? Integrating JRuby and Scala
   talk_type:    30min
   talk_summary: |
@@ -209,21 +207,20 @@
     Apart from being a "better Java", Scala brings to the table many
     interesting features such as:
 
-    A hybrid object-oriented/functional programming model, including such
-    concepts as pattern matching, immutable values, first-class functions and
-    closures.
-    An Actor framework for easy scalability and concurrency
-    A Parser Combinator library for easily writing parsers
-    and many other things
-    While the JRuby team has added some features to easily call Scala code
-    from JRuby in 1.6.0 and 1.6.6, calling JRuby from Scala still relies on
-    the bare JRuby embedding APIs.
+    * A hybrid object-oriented/functional programming model, including such
+      concepts as pattern matching, immutable values, first-class functions and
+      closures.
+    * An Actor framework for easy scalability and concurrency.
+    * A Parser Combinator library for easily writing parsers
+      and many other things.
+    * While the JRuby team has added some features to easily call Scala code
+      from JRuby in 1.6.0 and 1.6.6, calling JRuby from Scala still relies on
+      the bare JRuby embedding APIs.
 
     In this session we will cover the new features for calling Scala from
     JRuby, as well as introducing an interoperability library called
-    (Scuby)[http://github.com/abstracc/scuby] that we built for easing the
-    pain of calling JRuby from Scala. It is recommended that attendees have
-    some Scala knowledge to take full advantage of the session.
+    [Scuby](http://github.com/abstracc/scuby) that we built for easing the
+    pain of calling JRuby from Scala.
 -
   name:         Uwe Kubosch
   company:      Datek Wireless AS
@@ -232,16 +229,16 @@
   image:        ukubosch.jpg
   url:          http://kubosch.no/
   bio:          |
-    I live in Norway just north of Oslo with my wife and twi kids. By day I
-    work at Datek Wireless ( http://datek.no/ ) developing fleet control
+    Uwe lives in Norway just north of Oslo with his wife and two kids. By day
+    he works at [Datek Wireless](http://datek.no/) developing fleet control
     systems for airports and the evenings are divided between family, open
-    source development and jujutsu. I am currently most active in the Ruboto
+    source development and jujutsu. He is currently most active in the Ruboto
     project, JRuby on Android.
   talk_title:   Ruboto - JRuby on Android
   talk_type:    30min
   talk_summary: |
     Android has made great advances the last couple of years, and is one
-    of the major actors in the phone ad tablet markets.
+    of the major actors in the phone and tablet markets.
 
     The main programming language on Android is Java. Android offers a
     comprehensive API to apps running on the Dalvik VM. The API covers a
