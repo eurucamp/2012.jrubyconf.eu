@@ -6,7 +6,13 @@
   image:        tenebo.jpg
   url:          http://blog.enebo.com/
   bio:          |
-    _to be added_
+    Thomas Enebo is the co-lead of the JRuby project and an employee of
+    Red Hat.  He has been a practitioner of Java since the heady days of
+    the HotJava browser, and he has been happily using Ruby since 2001.
+    Thomas has spoken at numerous Java and Ruby conferences, co-authored
+    "Using JRuby", and was awarded the "Rock Star" award at JavaOne.  When
+    Thomas is not working he enjoys biking, anime, and drinking a decent
+    IPA.
   talk_title: JRubyConf EU Keynote
   talk_type: 30min
   talk_summary: |
