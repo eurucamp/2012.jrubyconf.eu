@@ -5,6 +5,17 @@
   twitter:      tom_enebo
   image:        tenebo.jpg
   url:          http://blog.enebo.com/
+  bio:          |
+    Tom is the co-lead of the JRuby project and an employee of Red Hat. He has
+    been a practitioner of Java since the heady days of the HotJava browser,
+    and he has been happily using Ruby since 2001. Thomas has spoken at
+    numerous Java and Ruby conferences, co-authored "Using JRuby", and was
+    awarded the "Rock Star" award at JavaOne. When Thomas is not working he
+    enjoys biking, anime, and drinking a decent IPA.
+  talk_title: JRubyConf EU Keynote
+  talk_type: 30min
+  talk_summary: |
+    _to be announced_
 -
   name:         Theo Hultberg
   company:      Burt
@@ -12,6 +23,29 @@
   twitter:      ikonara
   image:        thultberg.jpg
   url:          http://architecturalatrocities.com/
+  bio:          |
+    Theo is Chief Architect at Burt, a Göteborg based big data
+    startup that wants to revolutionize the advertising industry by showing
+    that there's more to ad analytics than clicks. Theo has built distributed
+    analytics systems that handle tens of millions of messages per day – in
+    Ruby.
+  talk_title:   Concurrency and distributed systems with JRuby
+  talk_type:    30min
+  talk_summary: |
+    You probably code on a machine with two, if not four, or even eight cores.
+    Yet your Ruby application will use only one of them. Concurrency is hard,
+    but it’s even harder when you don’t have the environment, or the tools, to
+    do it properly.
+
+    JRuby gives you these tools, and so much more. I’ll show you how you can
+    use JRuby to write concurrent code, and even distributed systems without
+    having to think about threads, locks and the complexity that they cause.
+
+    Running on the JVM is like standing on the shoulders of giants. Why not
+    use Akka, an actor framework written in Scala, or Storm, a distributed
+    real time computation system written in Clojure? I’ll explain how, and
+    show you many more examples of how to use the full power of the JVM from
+    the comfort of Ruby.
 -
   name:         Tim Lossen
   company:      Wooga
@@ -19,6 +53,18 @@
   twitter:      tlossen
   image:        tlossen.jpg
   url:          http://tim.lossen.de/
+  bio:          |
+    Tim really enjoys talking about himself in the third person. Not.
+
+    He lives in Berlin with his girlfriend and two charming little daughters.
+    Tim is deeply in love with Ruby and co-organized Euruko 2011.
+    Tim works as a backend engineer at social gaming startup [Wooga](http://wooga.com).
+    At night he likes to go down to the basement and hack on secret hardware
+    projects like Superglobe or [Evercube](http://evercu.be).
+  talk_title:   Building a High-Traffic Game Server in JRuby
+  talk_type:    30min
+  talk_summary: |
+    _to be announced_
 -
   name:         Joe Kutner
   company:      Independent Consultant
@@ -26,6 +72,29 @@
   twitter:      codefinger
   image:        jkutner.jpg
   url:          http://joekutner.appspot.com/
+  bio:          |
+    Joe is the author of [Deploying with JRuby](http://pragprog.com/book/jkdepj/deploying-with-jruby)
+    from the Pragmatic Bookshelf. He has been building JRuby applications
+    since 2006 for clients including IBM and NASA. Today, Joe is a
+    professional software consultant and founder of LogicHaus, where he builds
+    Ruby and Rails applications for customers of all sizes. He also
+    contributes to several JRuby projects including TorqueBox and Trinidad.
+
+  talk_title:   Deploy, Scale and Sleep Better with JRuby
+  talk_type:    30min
+  talk_summary: |
+    JRuby deployments have fewer moving parts and consume less memory than
+    traditional Ruby deployments, but to deploy your apps on the JVM, you need
+    to learn some new approaches. This talk will introduce you to three JRuby
+    deployment strategies that will give you the performance and scalability
+    you need while letting you use the language you love.
+
+    You'll learn how Warbler can be used to create a binary file from a Ruby
+    web application. Then we'll discuss how the light-weight Trinidad web
+    server can be used to create a flexible, modular deployment that still
+    feels friendly and familiar. Finally, you'll learn how to power an
+    application with TorqueBox, an all-in-one environment that includes
+    built-in support for messaging, scheduling and daemons.
 -
   name:         Toby Crawley
   company:      "Red Hat, Inc."
@@ -33,6 +102,35 @@
   twitter:      tcrawley
   image:        tcrawley.jpg
   url:          http://blog.tobiascrawley.net/
+  bio:          |
+    As a core member of the [TorqueBox](http://torquebox.org/) and
+    [Immutant](http://immutant.org) teams
+    at Red Hat, Toby helps drive the integration of Java and other JVM
+    languages. Toby joined Red Hat in 2010, initially working on cloud
+    technologies using Ruby before moving to work on TorqueBox and
+    Immutant full-time.
+
+    Prior to joining Red Hat, Toby spent too many years as a freelance
+    consultant developing Ruby and Java applications.
+  talk_title:   Simplify Your Infrastructure With TorqueBox
+  talk_type:    30min
+  talk_summary: |
+    [TorqueBox](http://torquebox.org/) is an open source project that
+    combines [JRuby](http://jruby.org/) with the [JBoss Application
+    Server](http://www.jboss.org/as7) to form a fast, scalable application
+    server for Rack/Rails applications. It exposes features traditionally
+    found in Java application servers to Ruby, such as:
+
+    * asynchronous processing
+    * job scheduling
+    * daemons
+    * caching
+    * clustering
+    * websockets
+
+    After a quick overview, we'll modify an existing application via
+    "live" coding to use some of the above features as a demonstration of
+    the simplicity and power that TorqueBox provides.
 -
   name:         Benoit Daloze
   company:      Université catholique de Louvain
@@ -40,6 +138,27 @@
   twitter:      eregontp
   image:        bdaloze.jpg
   url:
+  bio:          |
+    Benoit is an open-source evangelist and a benchmark freak. He recently
+    became an MRI committer and enjoys contributing to many projects including
+    JRuby, Rubinius and Homebrew. He has been working this summer with the
+    Google Summer of Code program and had the chance to have @enebo as a
+    mentor.
+  talk_title:   Benchmarking the right way with Perfer
+  talk_type:    30min
+  talk_summary: |
+    Ever wondered what it would take to have stable and reliable measurements
+    for your performance? Or wished to know the evolution of it across
+    releases and rubies? Or simply to know how fast or slow some code is?
+    Perfer is a benchmarking tool, intending to solve these, and to provide an
+    easy way to store, transform and compare the results and to make a graph
+    of it. This is the result of a GSoC project of this year, so it's fresh
+    and new, come and see yourself!
+
+    The talk will start with some benchmarking best practices, explaining why
+    using the benchmark stdlib is usually not sufficient. I will then explain
+    Perfer's approach and show how to use it and how it can be useful in
+    real-world examples.
 -
   name:         David Tollmyr
   company:      Burt
@@ -47,13 +166,61 @@
   twitter:      effata
   image:        dtollmyr.jpg
   url:          http://www.taketh.se/
+  bio:          |
+    Seven years ago David was asked to join a friend's startup. Very simple
+    stuff, one web server, editing php scripts live. That was the start of a
+    fantastic journey that has now taken him to ad analytics startup Burt,
+    where they show that there's more to metrics than clicks. On a normal day,
+    the Burt team process tens of thousands of requests per second, in real
+    time, in JRuby. In my spare time, David sings in two metal bands, play
+    competitive Starcraft II and collect single malts.
+  talk_title:   Gotcha! JRuby performance issues that will come back to bite you
+  talk_type:    30min
+  talk_summary: |
+    With JRuby you can take the simplicity of Ruby and scale up to very
+    complex systems with little effort. But there are monsters hiding in the
+    shadows, waiting to strike. That class you just wrote might work perform
+    fine in your tests, but what happens when you run it ten thousand times
+    per second? At Burt we've learned a lot of these lessons the hard way. Now
+    you don't have to! Let me show you some of the most common issues you're
+    going to run in to, how you can work around them and the tools that will
+    help you on the way.
 -
   name:         Mario Camou
   company:      abstrac·cc
   company_url:  http://www.abstra.cc/
   twitter:      thedoc
   image:        mcamou.jpg
-  url:          http://www.abstra.cc/
+  url:          http://www.linkedin.com/in/mcamou
+  bio:          |
+    Mario has been involved with Java since the Beta version, and with JRuby
+    and Scala since 2008. In previous incarnations he was Java Evangelist for
+    Sun Mexico and Java Instructor for Sun EMEA. He is currently Master
+    Architect and Co-founder of Abstra.cc, where he is involved in several
+    projects using JRuby, Scala and combinations thereof.
+  talk_title:   Static or dynamic typing? Why not both? Integrating JRuby and Scala
+  talk_type:    30min
+  talk_summary: |
+    One of the advantages of JRuby is that, running on the JVM, it is
+    relatively easy to integrate it with other JVM languages and libraries.
+    One language that has been generating a lot of interest lately is Scala.
+    Apart from being a "better Java", Scala brings to the table many
+    interesting features such as:
+
+    * A hybrid object-oriented/functional programming model, including such
+      concepts as pattern matching, immutable values, first-class functions and
+      closures.
+    * An Actor framework for easy scalability and concurrency.
+    * A Parser Combinator library for easily writing parsers
+      and many other things.
+    * While the JRuby team has added some features to easily call Scala code
+      from JRuby in 1.6.0 and 1.6.6, calling JRuby from Scala still relies on
+      the bare JRuby embedding APIs.
+
+    In this session we will cover the new features for calling Scala from
+    JRuby, as well as introducing an interoperability library called
+    [Scuby](http://github.com/abstracc/scuby) that we built for easing the
+    pain of calling JRuby from Scala.
 -
   name:         Uwe Kubosch
   company:      Datek Wireless AS
@@ -61,3 +228,44 @@
   twitter:      donv70
   image:        ukubosch.jpg
   url:          http://kubosch.no/
+  bio:          |
+    Uwe lives in Norway just north of Oslo with his wife and two kids. By day
+    he works at [Datek Wireless](http://datek.no/) developing fleet control
+    systems for airports and the evenings are divided between family, open
+    source development and jujutsu. He is currently most active in the Ruboto
+    project, JRuby on Android.
+  talk_title:   Ruboto - JRuby on Android
+  talk_type:    30min
+  talk_summary: |
+    Android has made great advances the last couple of years, and is one
+    of the major actors in the phone and tablet markets.
+
+    The main programming language on Android is Java. Android offers a
+    comprehensive API to apps running on the Dalvik VM. The API covers a
+    large part of the Java standard library in addition to Android
+    specific APIs. Android includes tooling to convert Java .class files
+    to Dalvik VM compatible class files.
+
+    Ruboto uses JRuby to allow you to run Ruby scripts on the Dalvik VM.
+    Using Ruby code, you have access to the complete Android API.
+
+    Currently, there are two offerings: ruboto and ruboto-irb. Ruboto is
+    a framework and tool chain to develop stand-alone Android apps in
+    Ruby. Ruboto-IRB is an interactive Ruby environment for learning,
+    exploration, development, and testing.
+
+    This presentation will introduce the different parts of Ruboto:
+
+    * Installation
+    * Hello World
+    * Development tools
+    * Emulator
+    * Combine Java and Ruby in the same project
+    * Limitations
+    * Release
+
+    There is a lot happening both on Android, JRuby, and Ruboto, and I'd
+    like to present the last months development, and present the road map
+    for the project.
+
+    See what Ruboto has to offer!
