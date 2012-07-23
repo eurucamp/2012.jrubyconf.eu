@@ -60,9 +60,9 @@ body_class: index
           %a(href="http://lanyrd.com/2012/jrubyconfeu" title="JRubyConf EU on lanyard.com") Let us know on Lanyrd
 
   %section.sponsors
-    = wrapped :header do
+    -# wrapped :header do
       %h3 Our sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
+    -#= partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
     = wrapped :header do
       %h3 Our partners
     = partial 'partials/partners', :locals => { :partners => data.partners }
