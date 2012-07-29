@@ -22,7 +22,7 @@ body_class: index
   %section.sponsors
     = wrapped :header do
       %h3 Our sponsors
-    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors }
+    = partial 'partials/sponsors', :locals => { :sponsors => data.sponsors.select{|s| s.track == 'jrubyconfeu' } }
 
   .block
     %section.speakers
@@ -69,3 +69,6 @@ body_class: index
     = wrapped :header do
       %h3 Our partners
     = partial 'partials/partners', :locals => { :partners => data.partners }
+    -# wrapped :header do
+      %h3 eurucamp Sponsors
+    -# partial 'partials/sponsors', :locals => { :sponsors => data.sponsors.select{|s| s.track == 'eurucamp' } }
