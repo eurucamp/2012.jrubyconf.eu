@@ -12,12 +12,12 @@ body_class: index
   = wrapped :section, :class => 'register' do
     = link_to 'http://eurucamp2012.eventbrite.com', :title => 'Get your ticket', :class => 'primary' do
       %span
-        Register now
+        Join Us!
     %p
       %small
-        Ticket prices are
-        = link_to 'starting from &euro;50', 'http://2012.eurucamp.org/2012/07/05/ticket-sales-begin-monday', :title => 'More information on our blog'
-        \.
+        = succeed '.' do
+          Last Minute tickets
+          = link_to 'available from 5pm Friday 3.8', 'http://2012.eurucamp.org/2012/07/30/main-ticket-sale-ended', :title   => 'More information on our blog'
 
   %section.sponsors
     = wrapped :header do
