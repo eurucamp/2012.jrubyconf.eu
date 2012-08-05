@@ -63,6 +63,30 @@
   description:
   track:      eurucamp
 -
+  company:    Wooga
+  twitter:    wooga
+  image:      wooga.png
+  url:        http://www.wooga.com/
+  level:      Birken
+  description:
+  track:      eurucamp
+-
+  company:    New Relic
+  twitter:    NewRelic
+  image:      newrelic.png
+  url:        http://newrelic.com/
+  level:      Birken
+  description:
+  track:      eurucamp
+-
+  company:    6Wunderkinder
+  twitter:    6Wunderkinder
+  image:      6wunderkinder.png
+  url:        http://www.6wunderkinder.com
+  level:      espresso
+  description:
+  track:      eurucamp
+-
   company:    innoQ
   twitter:    innoQ
   image:      innoq.png
