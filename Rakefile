@@ -1,5 +1,7 @@
 require 'bundler/setup'
 require 'heroku_san'
+require 'fileutils'
+require 'net/https'
 
 module HerokuSan::Deploy
   class Eurucamp < Sinatra
@@ -22,6 +24,26 @@ require 'yaml'
 require 'sitemap_generator'
 
 namespace :utils do
+
+  desc "Update sponsors"
+  task :update_sponsors do
+    FileUtils.rm("data/sponsors.yml")
+
+    # http://ruby-doc.org/stdlib-1.9.3/libdoc/net/http/rdoc/Net/HTTP.html
+    uri = URI("https://raw.github.com/eurucamp/2012.eurucamp.org/master/data/sponsors.yml")
+
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => true) do |http|
+      request = Net::HTTP::Get.new uri.request_uri
+
+      http.request request do |response|
+        open "data/sponsors.yml", "w" do |io|
+          response.read_body do |chunk|
+            io.write chunk
+          end
+        end
+      end
+    end
+  end
 
   desc "Update attendees list with data from Lanyrd.com"
   task :update_attendees do
