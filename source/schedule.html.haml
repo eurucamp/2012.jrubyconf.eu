@@ -13,18 +13,9 @@ title: Schedule
           = float_to_time hour
 
     %ul.days
-      - %w(Friday).each do |day|
-        %li(class="#{day.downcase}")
-          %strong= day
-          %ul
-            - schedule_for data.schedule[day.downcase], :start => 8 do |item, duration, distance|
-              - style = "height: #{duration * 2 - 1}px; top: #{distance * 2}px"
-              - title = "#{"%0.2f" % item.start}: #{item.title}"
-
-              %li(class="#{item.type}" style="#{style}" title="#{title}")
-                %span
-                  %span= "%0.2f" % item.start
-                  %strong= item.title
+      %li(class="friday")
+        %strong Friday
+        %ul= partial 'partials/sessions', :locals => {:sessions => data.schedule['friday']}
 
   %p
     Friday daytime comprises multiple tracks at eurucamp, of which JRubyConf EU
