@@ -12,10 +12,11 @@
     numerous Java and Ruby conferences, co-authored "Using JRuby", and was
     awarded the "Rock Star" award at JavaOne. When Thomas is not working he
     enjoys biking, anime, and drinking a decent IPA.
-  talk_title: JRubyConf EU Keynote
-  talk_type: 30min
+  talk_title:   "JRubyConf EU Keynote: Today & Today+1"
+  talk_type:    45min
   talk_summary: |
-    _to be announced_
+    Tom will talk about the current state of JRuby along with some things that
+    will be happening in the not so distant future.
 -
   name:         Theo Hultberg
   company:      Burt
