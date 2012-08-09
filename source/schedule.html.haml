@@ -6,10 +6,6 @@ title: Schedule
   %header
     %h2 Schedule
 
-    %h3 An overview of the camp days
-
-  %p &nbsp;
-
   .schedules
     %ul.legend
       - (8..22).step(0.5) do |hour|
@@ -30,8 +26,14 @@ title: Schedule
                   %span= "%0.2f" % item.start
                   %strong= item.title
 
-  %p Friday daytime is multi-track comprising:
-  %ul
-    %li a beginners' track
-    %li= link_to 'JRubyConf EU', 'http://jrubyconf.eu'
-    %li an advanced workshop track
+  %p
+    Friday daytime comprises multiple tracks at eurucamp, of which JRubyConf EU
+    is considered
+    = succeed '.' do
+      = link_to 'one track', 'http://2012.eurucamp.org/schedule'
+
+  %h3 Saturday and Sunday
+  %p
+    If you’re joining us on Saturday and Sunday for the eurucamp main sessions,
+    = succeed '.' do
+      = link_to 'check the eurucamp schedule', 'http://2012.eurucamp.org/schedule'
