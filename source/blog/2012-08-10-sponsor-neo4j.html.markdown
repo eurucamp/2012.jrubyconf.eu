@@ -1,5 +1,5 @@
 ---
-title: "Meet our Sponsors: Neo4J"
+title: "Meet our Sponsors: Neo4j"
 date: 2012-08-10
 tags: sponsors
 author: Florian Gilcher
