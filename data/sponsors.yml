@@ -123,12 +123,28 @@
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
   track:      eurucamp
 -
+  company:    SponsorPay
+  twitter:    SponsorPay
+  image:      sponsorpay.png
+  url:        http://www.sponsorpay.com
+  level:      Linden
+  description:
+  track:      eurucamp
+-
   company:    innoQ
   twitter:    innoQ
   image:      innoq.png
   url:        http://www.innoq.com/
   level:      Linden
   description: They focus on enterprise architecture consulting for Fortune 1000 companies.
+  track:      jrubyconfeu
+-
+  company:    Neo4J
+  twitter:    Neo4j
+  image:      neo4j.png
+  url:        http://neo4j.org
+  level:      Linden
+  description:
   track:      jrubyconfeu
 -
   company:    Red Hat
