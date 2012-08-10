@@ -9,6 +9,8 @@ published: true
 
 We are thrilled to have another high-profile sponsor on our JRubyConf EU sponsors list: [Neo Technology][neotechnology], the people behind the Graph database [Neo4j](http://neo4j.org). 
 
+READMORE
+
 Let them explain what Neo4j does:
 
 ## Neo4j - Learn. Create. Connect.
