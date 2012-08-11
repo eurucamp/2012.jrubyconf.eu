@@ -21,7 +21,7 @@ Neo4j is a Graph Database that makes dealing with connected data much easier by 
 
 As a Java-based database we especially embrace languages on the JVM which can access Neo4j not only remotely but also in embedded mode which is great for high performance use-cases and quick turnaround in testing.
 
-From the beginning there have been strong drivers for Neo4j developed by members of the JRuby community, most notably [neo4j.rb](http://neo4j.rubyforge.org) by [Andreas Ronge](http://twitter.com/ronge) and [Pacer](https://github.com/pangloss/pacer) by Darrek Wiebe.
+From the beginning there have been strong drivers for Neo4j developed by members of the JRuby community, most notably [neo4j.rb](http://neo4j.rubyforge.org) by [Andreas Ronge](http://twitter.com/ronge) and [Pacer](https://github.com/pangloss/pacer) by [Darrick Wiebe](http://twitter.com/darrickwiebe).
 
 These gems are used a number of applications, a local one to Berlin is [MoviePilot](http://moviepilot.com), whose international platform runs on (J)Ruby and Neo4j. They also moved the driver forward with feedback and also provided new gems like [Jogger](http://moviepilotlabs.tumblr.com/post/18616539642/jogger-almost-like-named-scopes) for using Neo4j from JRuby. 
 
