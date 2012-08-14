@@ -48,24 +48,54 @@
     show you many more examples of how to use the full power of the JVM from
     the comfort of Ruby.
 -
-  name:         Tim Lossen
-  company:      Wooga
-  company_url:  http://www.wooga.com/
-  twitter:      tlossen
-  image:        tlossen.jpg
-  url:          http://tim.lossen.de/
+  name:         Stefan Plantikow
+  company:      MoviePilot
+  company_url:  http://moviepilot.com/
+  twitter:      boggle
+  image:        splantikow.jpg
+  url:          https://github.com/boggle/
   bio:          |
-    Tim really enjoys talking about himself in the third person. Not.
+    Stefan has been working as a researcher on distributed data
+    management for grids, concurrency frameworks, and graph partitioning,
+    contributing to the <a
+    href="http://code.google.com/p/scalaris">scalaris</a> key-value-store
+    and writing the <a href="http://gndms.zib.de">GNDMS</a> grid data
+    management system. Currently he is working for <a
+    href="http://moviepilot.com">moviepilot.com</a> on their internal
+    graph database middleware.
 
-    He lives in Berlin with his girlfriend and two charming little daughters.
-    Tim is deeply in love with Ruby and co-organized Euruko 2011.
-    Tim works as a backend engineer at social gaming startup [Wooga](http://wooga.com).
-    At night he likes to go down to the basement and hack on secret hardware
-    projects like Superglobe or [Evercube](http://evercu.be).
-  talk_title:   Building a High-Traffic Game Server in JRuby
+    As a developer, Stefan is passionate about building flexible
+    abstractions that are simple to use and get the most out of available
+    resources. In his spare time,
+    he aims to make concurrency more accessible by writing DSLs (<a
+    href="http://github.com/boggle/soueffleuse">souffleuse</a>) and
+    frameworks (<a href="http://github.com/boggle/andromeda">andromenda</a>).
+    When not writing software, Stefan likes to play a good game of go and
+    is a member of c-base Berlin, a club for the local IT community.
+  talk_title:   To be announced
   talk_type:    30min
   talk_summary: |
     _to be announced_
+-
+  name:         Michael Hunger
+  company:      Freelancer / Neotechnology
+  company_url:  http://www.neotechnology.com/
+  twitter:      mesirii
+  image:        mhunger.jpg
+  url:          http://jexp.de/
+  bio:          |
+    Michael has been passionate about soﬅware development for a long time. He is particularly interested in the people who develop soﬅware, soﬅware craﬅsmanship, programming languages, and improving code.</p>
+    <p>For the last two years he has been working with <a href="http://neotechnology.com/">Neo Technology</a> on the <a href="http://neo4j.org">Neo4j</a> graph database. As the project lead of Spring Data Neo4j he helped developing the idea to become a convenient and complete solution for object graph mapping. Now he has even more fun taking care of the Neo4j community and hacking on cool stuff.<br />
+    Good relationships are everywhere in Michael’s life. His “real” life concerns his family and children, running his coffee shop and co-working-space "<a href="http://die-buchbar.de/">die-buchbar</a>", living in the depths of a text-based <a href="http://mg.mud.de/">multi-user dungeon</a>, tinkering with and without Lego® and much <a href="http://jexp.de/blog">more</a>.</p>
+    <p>As a developer he loves to work with many aspects of programming languages, learning new things every day, participating in exciting and ambitious <a href="http://github.com/jexp"> open source projects</a> and contributing to different programming related books. Michael is also member of the <a href="http://www.jetbrains.com/devnet/academy/index.html">Jetbrains Academy Board</a> and an editor at <a href="http://www.infoq.com/author/Michael-Hunger">InfoQ</a>.</p>
+
+  talk_title:   Neo4j<-[:LOVES]->(J)Ruby
+  talk_type:    30min
+  talk_summary: |
+    Despite Neo4J being written in Java and running on the JVM, the Ruby community has embraced the concepts of connected data and graph databases from early on.
+    So gems from both camps - like the JRuby based neo4j.rb and neography written pure Ruby have allowed Ruby developers to write cool applications using Neo4j.
+    I will quickly introduce graph databases and Neo4j and then give an overview of existing ruby drivers and show some apps using these.
+    We will peek at some code and check out the app powering the tag-graph for JRubyConf.EU
 -
   name:         Joe Kutner
   company:      Independent Consultant
