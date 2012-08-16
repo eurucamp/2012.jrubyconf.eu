@@ -72,8 +72,8 @@
     frameworks (<a href="http://github.com/boggle/andromeda">andromenda</a>).
     When not writing software, Stefan likes to play a good game of go and
     is a member of c-base Berlin, a club for the local IT community.
-  talk_title:   To be announced
-  talk_type:    30min
+  talk_title:   Andromeda - A dataflow concurrency framework for Ruby
+  talk_type:    15min
   talk_summary: |
     _to be announced_
 -
@@ -90,7 +90,7 @@
     <p>As a developer he loves to work with many aspects of programming languages, learning new things every day, participating in exciting and ambitious <a href="http://github.com/jexp"> open source projects</a> and contributing to different programming related books. Michael is also member of the <a href="http://www.jetbrains.com/devnet/academy/index.html">Jetbrains Academy Board</a> and an editor at <a href="http://www.infoq.com/author/Michael-Hunger">InfoQ</a>.</p>
 
   talk_title:   Neo4j<-[:LOVES]->(J)Ruby
-  talk_type:    30min
+  talk_type:    15min
   talk_summary: |
     Despite Neo4J being written in Java and running on the JVM, the Ruby community has embraced the concepts of connected data and graph databases from early on.
     So gems from both camps - like the JRuby based neo4j.rb and neography written pure Ruby have allowed Ruby developers to write cool applications using Neo4j.
