@@ -23,9 +23,9 @@ friday:
     type:     break
   -
     start:    11.15
-    title:    Building a High-Traffic Game Server in JRuby
+    title:    Concurrency and distributed systems with JRuby
     type:     talk
-    speaker:  Tim Lossen
+    speaker:  Theo Hultberg
   -
     start:    11.45
     title:    Benchmarking the right way with Perfer
@@ -42,9 +42,14 @@ friday:
     type:     break
   -
     start:    13.45
-    title:    Concurrency and distributed systems with JRuby
+    title:    "Neo4j<-[:LOVES]->(J)Ruby"
     type:     talk
-    speaker:  Theo Hultberg
+    speaker:  Michael Hunger
+  -
+    start:    14.00
+    title:    Andromeda - A dataflow concurrency framework for Ruby
+    type:     talk
+    speaker:  Stefan Plantikow
   -
     start:    14.15
     title:    Ruboto - JRuby on Android
