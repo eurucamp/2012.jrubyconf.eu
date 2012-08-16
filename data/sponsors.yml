@@ -107,6 +107,14 @@
   description:
   track:      eurucamp
 -
+  company:    Readmill
+  twitter:    Readmill
+  image:      readmill.png
+  url:        http://readmill.com/
+  level:      Linden
+  description: Books have a big future.
+  track:      eurucamp
+-
   company:    basho
   twitter:    basho
   image:      basho-logo.png
@@ -126,10 +134,56 @@
   company:    SponsorPay
   twitter:    SponsorPay
   image:      sponsorpay.png
-  url:        http://www.sponsorpay.com
+  url:        http://www.sponsorpay.com/
   level:      Linden
   description:
   track:      eurucamp
+
+-
+  company:    livingsocial
+  twitter:    Dealissime
+  image:      livingsocial.png
+  url:        http://www.livingsocial.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    Springest
+  twitter:
+  image:      springest.png
+  url:        http://www.springest.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    moviepilot
+  twitter:    moviepilot
+  image:      moviepilot.png
+  url:        http://www.moviepilot.de
+  level:      Birken
+  description:
+  track:      jrubyconfeu
+
+-
+  company:    upstream
+  twitter:    upstream_agile
+  image:      upstream.png
+  url:        http://www.upstre.am/
+  level:      Birken
+  description:
+  track:      eurucamp
+
+-
+  company:    github
+  twitter:    github
+  image:      github.png
+  url:        http://www.github.com
+  level:      Birken
+  description:
+  track:      eurucamp
+
 -
   company:    innoQ
   twitter:    innoQ
