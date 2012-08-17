@@ -32,12 +32,7 @@ friday:
     type:     talk
     speaker:  Benoit Daloze
   -
-    start:    12.15
-    title:    Static or dynamic typing? Why not both? Integrating JRuby and Scala
-    type:     talk
-    speaker:  Mario Camou
-  -
-    start:    12.45
+    start:    12.30
     title:    Lunch
     type:     break
   -
@@ -75,6 +70,11 @@ friday:
     type:     break
   -
     start:    16.15
+    title:    Static or dynamic typing? Why not both? Integrating JRuby and Scala
+    type:     talk
+    speaker:  Mario Camou
+  -
+    start:    16.45
     title:    Lightning Talks
     type:     talk
   -
