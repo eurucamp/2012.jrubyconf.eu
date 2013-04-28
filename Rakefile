@@ -2,6 +2,7 @@ require 'bundler/setup'
 require 'heroku_san'
 require 'fileutils'
 require 'net/https'
+require 'yaml'
 
 module HerokuSan::Deploy
   class Eurucamp < Sinatra
