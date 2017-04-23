@@ -3,8 +3,8 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'rake',              '~> 0.9.2'
-gem 'sass',              :git => 'https://github.com/nex3/sass.git',
-                         :ref => '8a93d8c65baabeb6f3251d560095ff83b52308bf'
+gem 'sass'
+gem 'haml'
 
 gem 'middleman',         '~> 3.0.0'
 gem 'middleman-blog',    '~> 3.0.0'
