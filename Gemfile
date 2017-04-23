@@ -14,6 +14,7 @@ gem 'coffee-script'
 gem 'bourbon'
 gem 'nokogiri'
 gem 'redcarpet'
+gem 'rdiscount'
 gem 'pygments.rb'
 gem 'puma',              '~>1.6.3'
 
