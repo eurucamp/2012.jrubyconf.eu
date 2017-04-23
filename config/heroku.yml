@@ -3,4 +3,3 @@ production:
   app: jrubyconfeu
   config: &default
     BUNDLE_WITHOUT: "development:test"
-    BUILDPACK_URL: http://github.com/indirect/heroku-buildpack-middleman.git

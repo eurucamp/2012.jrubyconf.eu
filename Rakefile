@@ -4,6 +4,12 @@ require 'fileutils'
 require 'net/https'
 require 'yaml'
 
+namespace :assets do
+  task :precompile do
+    sh 'middleman build'
+  end
+end
+
 module HerokuSan::Deploy
   class Eurucamp < Sinatra
     def deploy
