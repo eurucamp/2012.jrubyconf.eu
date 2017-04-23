@@ -49,11 +49,6 @@ You will see the generated HTML & CSS by navigating to <http://localhost:4567/>.
 Deployment
 ----------
 
-### Staging
-
-* <http://dev.jrubyconf.eu/>
-* `bundle exec rake staging deploy`
-
 ### Production
 
 * <http://jrubyconf.eu/>
